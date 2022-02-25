@@ -10,7 +10,7 @@ const generateScraperUrl = (apiKey) => `https://api.scraperapi.com?api_key=${api
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Welcome to my Amazon Scrapper API.');
+    res.send('Welcome to my Amazon Scrapper API. <br/> You can use your own APIKey from scraperapi.com. <br/><br/> The available endpoints are: <br/><br/> - /products/:productId <br/> - /products/:producId/reviews <br/> - /products/:productId/offers <br/> - /search/:searchQuery <br/><br/> Then you can add your APIKey like this at the end of the url: ?api_key=myApiKey');
 });
 
 //GET PRODUCT DETAILS
